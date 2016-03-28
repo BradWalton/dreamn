@@ -33,7 +33,17 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'homepage',
+  },
+
+  '/User': {
+    controller: 'UserController',
+    action: 'create'
+  },
+
+  '/login':{
+    controller: 'UserController',
+    action: 'login'
   }
 
   /***************************************************************************
